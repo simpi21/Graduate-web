@@ -1,0 +1,850 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700%7CWork+Sans:400,500">
+   <link rel="icon" href="../dist/assets/img/brand.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../dist/assets/css/vendors.bundle.css">
+    <link rel="stylesheet" href="../dist/assets/fonts/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="../dist/assets/css/style.css">
+    <link rel="stylesheet" href="doc.style.css">
+    <title>Documentation</title>
+  </head>
+  <body id="top">
+  
+<nav class="navbar navbar-expand-md navbar-light bg-white px-5 py-3">
+  <a class="navbar-brand" href="#">
+    <img src="../dist/assets/img/logo-black.png" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Live Preview</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="mailto:support@echotheme.com?subject=Need Help">Support</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="mailto:echotheme.com@gmail.com?subject=Need Customization. Wanna Hire">Hire Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main class="main-wrapper">
+  <div class="container-fluid">
+    <div class="row">
+      <aside class="col-md-3 px-0">
+        <div class="sidebar sticky-top py-4">
+        <div class="brand p-4 border-bottom">
+          <div class="media align-items-center">
+           <img width="80" src="../dist/assets/img/brand.png" alt="">
+            <div class="media-body ml-3">
+              <h4>EchoTheme</h4>
+              <a href="mailto:support@echotheme.com">support@echotheme.com</a>
+            </div>
+          </div>
+        </div> <!-- END brand-->
+        <div class="p-4 side-nav">
+          <ul>
+            <li class="has-submenu">
+              <a href=""><i class="ti-target mr-2"></i>Getting Started</a>
+              <ul>
+                <li><a href="#get-start">Introduction</a></li>
+                <li><a href="#project-structure">Project Structure</a></li>
+                <li><a href="#dev-environment">Setup environment</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="#utilities"><i class="ti-target mr-2"></i> Utilities</a>
+              <ul>
+                <li><a href="#utilities">Utility CSS</a></li>
+                <li><a href="#background">Background</a></li>
+                <li><a href="#border">Border</a></li>
+                <li><a href="#border-radius">Border radius</a></li>
+                <li><a href="#position-alignment">Bottom/Top/Left/Right</a></li>
+                <li><a href="#center">Center</a></li>
+                <li><a href="#flex">Flex</a></li>
+                <li><a href="#font-size">Font Size</a></li>
+                <li><a href="#font-weight">Font Weight</a></li>
+                <li><a href="#height">Height</a></li>
+                <li><a href="#letter-spacing">Letter Spacing</a></li>
+                <li><a href="#line-spacing">Line Height</a></li>
+                <li><a href="#spacing">Spacing</a></li>
+                <li><a href="#opacity">Opacity</a></li>
+                <li><a href="#z-index">Z-index</a></li>
+                <li><a href="http://getbootstrap.com/docs/4.1/utilities/borders/" class="text-primary" target="_blank">Bootstrap Utilities</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="#Components"><i class="ti-target mr-2"></i> Components</a>
+              <ul>
+                <li><a href="#utilities">Utility CSS</a></li>
+                <li><a href="#carousels">Carousels</a></li>
+                <li><a href="#counters">Counters</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#lightbox">Lightbox</a></li>
+                <li><a href="#map">Map</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </aside> <!-- END col-md-3 -->
+      <div class="col-md-9 bg-light pl-md-5">
+        <div id="content" class="bg-white p-4 p-md-5 mt-5">
+         
+           <div id="get-start">
+            <h2 class="mb-4">Welcome</h2>
+              <p>
+                <strong>BIG THANKS</strong> for purchasing Educati, your support is truly appreciated! This document covers the installation and use of this template and often reveals answers to common problems and issues - read this document thoroughly if you are experiencing any difficulties. If you have any questions that are beyond the scope of this document, <strong>Please</strong> feel free to contact with our dedicated Support team.
+              </p>
+              <h2 class="my-4">Getting started</h2>
+                <p>
+                  Before getting a start and work with Educati you need to know about a few important things. we assume that you have a basic knowledge about HTML/CSS/JS and SCSS ( optional but recommended :) ). we will work you through on every single detail
+                </p>
+              <h4 class="mt-5 mb-3">
+                Dev environment
+              </h4>
+              <p>
+                <span class="text-danger font-weight-bold">Please Note</span>:  Educati is built using most modern development toolset. we also focus on simple and easy dev environment setup but keep in mind dev environment setup only for the advanced user who wanna speed up development process with professional tools. <i class="font-weight-semiBold"> this step is absolutely optional for the end user</i> if you have basic knowledge about HTML/CSS/JS you can highly customize Educati. we will find details documentation how you can set up your dev environment at the end of this section 
+              </p>
+                <h4 class="mt-5 mb-3">
+                  Component Based Development (CBD)
+                </h4>
+                <p>
+                  Everything in Educati is a component. components let you split the UI into independent, reusable pieces, and think about each piece in isolation.
+                </p>
+
+                <h4 class="mt-5 mb-3">
+                  Utility First CSS
+                </h4>
+                <p>
+                  Every components CSS written in Functional CSS (FCSS) concept come from functional programming. Small, clear, easy to read classes that are easy to apply and do one thing. Which, in essence, brings styling to the HTML level rather than the CSS level. For more details please read 
+                  <ul class="list-unstyled text-primary">
+                    <li><a href="https://jon.gold/2015/07/functional-css/" target="_blank">Functional Programming, CSS, and your sanity</a></li>
+                    <li><a href="http://eng.wealthfront.com/2013/08/20/functional-css-fcss/" target="_blank">Functional CSS (FCSS)</a></li>
+                    <li><a href="https://csswizardry.com/2015/03/immutable-css/" target="_blank">Immutable CSS</a></li>
+                  </ul>
+                </p>
+
+                <h4 class="mt-5 mb-3">
+                  Dynamic Scripts Loading
+                </h4>
+                <p>
+                   Dynamic Scripts Loading mean <i class="font-weight-semiBold">only load scripts when necessary</i>. it will render page without blocking and load side 4X faster. 
+                   <a href="https://www.nczonline.net/blog/2009/06/23/loading-javascript-without-blocking/" class="text-primary" target="_blank">More</a>
+                </p>
+           </div> <!-- END get-start-->
+           
+           
+           <div id="project-structure">
+             
+             <h2 class="mt-5 mb-3">
+               Project Structure
+             </h2>
+             <p>
+               Before talk about code principle let's walk through on project structure.
+             </p>
+        <pre class="bg-light mt-3">
+        Educati
+        ├── dist/
+        │   ├─assets/
+        │   ├─├─ css/
+        │   ├─├──├─ style.css - (contain all theme style css)
+        │   ├─│  ├─ vendors.bundle.css - (all third party vendors css include bootstrap. Note: Bundle using glup)
+        │   ├─│  ├─ customize.css - (Your all custom css code)
+        │   ├─├─ data/ - (Contain all json files)
+        │   ├─├─ fonts/ - (Contain icon fonts)
+        │   ├─├─ img/ - (Contain All images)
+        │   ├─├─ js/ 
+        │   ├─├──├─ scripts.js - (contain theme scripts)
+        │   ├─│  ├─ vendors.bundle.js - (Scripts that are used in every page like jquery, bootstrap, wow)
+        │   ├─├─ media/  - (Video, Audio, or any media)
+        │   ├─├─ scss/  - (All scss files with partials)
+        │   ├─├─ vendor/ - (All third party scripts and files)
+        │   ├─blog-{blog-page-name}.html (All blog pages start with blog prefix)
+        │   ├─element-{element-name}.html (All element prefix with element)
+        │   ├─page-{page-name}.html (All pages prefix with page)
+        │   ├─shop-{shop-page-name}.html (All shop pages start with shop prefix)
+        ├── documentation - contain documentation of the theme
+        ├── .bowerrc ( bower config file)
+        ├── bower.json (Kepp track all third party plugin and it's dependency)
+        └── gulpfile.js (gulp task runner)
+        └── package.json (Keep track all npm packages used in project)
+        </pre>
+              <h4 class="mt-5 mb-3">
+                HTML files
+              </h4>
+              <p>
+                Educati HTML written in most semantic way to improved seo and easy customization. HTML follow BEM naming convension
+              </p>
+
+              <h4 class="mt-5 mb-3">
+                CSS
+              </h4>
+              <p>
+                Educati has highly written in advance SCSS which compile to plain CSS so that browser can understand it. to compile SCSS you can use gulp task runner or very popular software like <a href="https://prepros.io/" target="_blank" class="text-primary">Prepros</a>. if you don't like command line interface you can very easily use Prepose no configuration required just drop your project folder into Prepose and you good to go. 
+                <span class="text-danger">Note:</span> <i>Prepose has unlimited free trial</i>. you also can use <a href="http://koala-app.com/" target="_blank" class="text-primary">koala</a>
+              </p>            
+              <h4 class="mt-5 mb-3"> 
+                Customization
+              </h4>
+              <p>
+                Educati is a highly customizable theme. you can customize everything based on your need. 
+              </p>
+              <strong>Customize CSS</strong>
+              <p>
+                You can customize CSS via SCSS(We highly recommended ) or plan CSS. Please write you all custom CSS in <code>customize.css</code> file so it will conflict with our next update
+              </p>
+              <strong>Customize js</strong>
+              <p>
+                If you are a advance user you can direct customize our <code>scripts.js</code> or put your all custom code in <code>customize.js</code>
+              </p>
+           </div> <!-- END project structure-->
+           
+           
+           <div id="dev-environment">
+             <h2 class="mt-5 mb-4">Setup development environment <small>(Optional)</small></h2>
+             
+             <h4>Install Node.js <a href="https://nodejs.org/en/" target="_blank" class="text-primary ml-3">Official site</a></h4>
+             <p>
+               Is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
+             </p>            
+             
+             <h4 class="mt-4 mb-3">Install NPM <a href="https://docs.npmjs.com/" target="_blank" class="text-primary ml-2">Official Site</a></h4>
+             <p>
+               npm makes it easy for JavaScript developers to share and reuse code, and makes it easy to update the code that you’re sharing, so you can build amazing things.
+             </p>
+             <p>
+               npm is distributed with Node.js- which means that when you download Node.js, you automatically get npm installed on your computer.
+             </p>
+             <h6>Check that you have node and npm installed</h6>
+             <p>
+               To check if you have Node.js installed, run this command in your terminal:
+             </p>
+             <code class="bg-light p-3 d-block">node -v</code>
+             <p>
+               To confirm that you have npm installed you can run this command in your terminal:
+             </p>
+             <code class="bg-light p-3 d-block">npm -v</code>
+             
+             <h4 class="mt-4 mb-3">Install Gulp<a href="https://gulpjs.com/" target="_blank" class="text-primary ml-3">Official site</a></h4>
+             <p>
+               Gulp is a toolkit that helps you automate your time-consuming tasks in development workflow. To install gulp globally.
+             </p>
+             
+             <h4 class="mt-4 mb-3">Installing packages necessary for Educati development</h4>
+             <code class="bg-light p-3 d-block mb-4">npm install</code>
+             <p>
+               This will start the process of installing all dependencies which is listed inside <code>package.json</code> file. 
+             </p>
+           </div>
+           
+          <div id="#utilities" class="pt-5">
+           
+            <h2>Utility CSS</h2>
+            <p>
+              As refer before, Educati developed using utility classes. we assume you read reference article from Utility First CSS section and now have solid understand about Functional CSS. 
+              <span class="font-weight-semiBold text-success">Please Note:</span> 
+              <i>
+                Educati also heavily depends on Bootstrap utility classes specially flexbox.
+              </i>
+              If you working with SCSS you will see all utility classes formatted nicely in utility folder. 
+            </p>
+            <p>
+              let's walk through on utility class 
+            </p>
+            
+            <div id="background">
+              
+            <p class="mt-5">
+              <strong>Background</strong>
+            </p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Class</th>
+                  <th scope="col">Properties</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">.bg-cover</th>
+                  <td> background-size: cover !important;</td>
+                </tr>
+                <tr>
+                  <th scope="row">.bg-center</th>
+                  <td> background-position: center center !important;</td>
+                </tr>
+                <tr>
+                  <th scope="row">.bg-absolute</th>
+                  <td>Set background as absolute position to any block </td>
+                </tr>
+              </tbody>
+            </table>
+            </div> <!-- END background-->
+            
+            <div id="border">
+              <p class="mt-5">
+              <strong>Border</strong>
+            </p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Class</th>
+                  <th scope="col">Properties</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">.border-dashed</th>
+                  <td>  border-style: dashed  !important;</td>
+                </tr>
+                <tr>
+                  <th scope="row">.border-dotted</th>
+                  <td>  border-style: dotted  !important;</td>
+                </tr>
+                <tr>
+                  <th scope="row">.border-{md/lg}-{top/bottom/left/right}</th>
+                  <td>Add border in a specific media and side </td>
+                </tr>
+                <tr>
+                  <th scope="row">.border-{1-6}</th>
+                  <td>border-width-{1-6}</td>
+                </tr>
+                <tr>
+                  <th scope="row">.border-light{1-3}</th>
+                  <td>light border color variation</td>
+                </tr>
+                <tr>
+                  <th scope="row">.border-white-0_{1-9}</th>
+                  <td>White border color variation</td>
+                </tr>
+                <tr>
+                  <th scope="row">.border-black-0_{1-9}</th>
+                  <td>Black border color variation</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            
+            
+            <div id="border-radius">
+              <p class="mt-5">
+              <strong>Border radius</strong>
+            </p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Class</th>
+                  <th scope="col">Properties</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">.rounded-{2-10/15-30}</th>
+                  <td> border-radius-{2-10/15-30}</td>
+                </tr>
+                <tr>
+                  <th scope="row">.rounded-{top/bottom/left/right}-0</th>
+                  <td>  Reset border radius to 0</td>
+                </tr>
+                <tr>
+                  <th scope="row">.rounded-{left/right}</th>
+                  <td>  Pill border left/right side</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            
+            <div id="position-alignment">
+              <p class="mt-5">
+              <strong>Bottom/Top/Left/Right</strong>
+            </p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Class</th>
+                  <th scope="col">Properties</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">.{bottom/top/left/right}-{0-50}</th>
+                  <td>  .{bottom/top/left/right}-{0,5,10,15,20....50} </td>
+                </tr>
+                <tr>
+                  <th scope="row">.{bottom/top/left/right}-{25p/50p/75p/100p}</th>
+                  <td>  .{bottom/top/left/right}-{25/50/75/100}%</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            
+           <div id="center">
+              <p class="mt-5">
+              <strong>Center</strong>
+            </p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Class</th>
+                  <th scope="col">Properties</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">.absolute-center</th>
+                  <td> Center absolute position element </td>
+                </tr>
+                <tr>
+                  <th scope="row">.absolute-center-{x/y}</th>
+                  <td> Center absolute position element {x/y} axis</td>
+                </tr>
+              </tbody>
+            </table>
+           </div>
+            
+           
+           <div id="flex">
+              <p class="mt-5">
+              <strong>Flex</strong>
+            </p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Class</th>
+                  <th scope="col">Properties</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">.flex-child-samewidth</th>
+                  <td> Make flex child same width </td>
+                </tr>
+                <tr>
+                  <th scope="row">.flex-auto</th>
+                  <td>.flex-auto </td>
+                </tr>
+              </tbody>
+            </table>
+           </div>
+            
+           <div id="font-size">
+              <p class="mt-5">
+              <strong>Font Size</strong>
+            </p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Class</th>
+                  <th scope="col">Properties</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">.font-size-{md/lg}-{10-60}</th>
+                  <td> Set font size 10,12,14,16,18...60. md/lg set specific media</td>
+                </tr>
+              </tbody>
+            </table>
+           </div>
+            
+            <div id="font-weight">
+              <p class="mt-5">
+              <strong>Font Weight</strong>
+            </p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Class</th>
+                  <th scope="col">Properties</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">.font-weight-{thin/semiBold/bold/extraBold}</th>
+                  <td> Set font weight </td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            
+            
+            <div id="height">
+              <p class="mt-5">
+              <strong>Height</strong>
+            </p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Class</th>
+                  <th scope="col">Properties</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">.height-{50/60/70/80/90/100}vh</th>
+                  <td>  height: {50/60/70/80/90/100}vh </td>
+                </tr>
+                <tr>
+                  <th scope="row">.height-{1-15}</th>
+                  <td>  height: {1-15}px </td>
+                </tr>
+                <tr>
+                  <th scope="row">.height-100p</th>
+                  <td>  height: 100% </td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            
+            <div id="letter-spacing">
+            <p class="mt-5">
+              <strong>Letter Spacing</strong>
+            </p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Class</th>
+                  <th scope="col">Properties</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">.letter-spacing-{1-10}</th>
+                  <td> letter-spacing:{1-10}px </td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            
+            <div id="line-spacing">
+            <p class="mt-5">
+              <strong>Line Height</strong>
+            </p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Class</th>
+                  <th scope="col">Properties</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">.line-height-{reset/xs/sm/lg/xl}</th>
+                  <td> line-height:{normal/1.2/1.47/2/2.2} </td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            
+            <div id="list-style">
+            <p class="mt-5">
+              <strong>List Style</strong>
+            </p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Class</th>
+                  <th scope="col">Properties</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">.list-style-{circle/square}</th>
+                  <td> list-style-type: {circle/square}; </td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            
+            <div id="spacing">
+            <p class="mt-5">
+              <strong>Spacing</strong>
+            </p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Class</th>
+                  <th scope="col">Properties</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">.{margin/padding}</th>
+                  <td> Please check details at scss/utilities/_{margin/padding}.scss</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            
+            <div id="opacity">
+            <p class="mt-5">
+              <strong>Opacity</strong>
+            </p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Class</th>
+                  <th scope="col">Properties</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">.opacity-{01-09}</th>
+                  <td> opacity:{0.1-0.9}</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            
+            <div id="z-index">
+            <p class="mt-5">
+              <strong>Z-index</strong>
+            </p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Class</th>
+                  <th scope="col">Properties</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">.z-index-{1,5,10,20,50,100}</th>
+                  <td> z-index:{1,5,10,20,50,100}</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            
+          </div> <!-- END utilities-->
+          
+          <div id="components" class="mt-5">
+              <h2>Components</h2>
+              <p>
+                <strong class="text-danger"> Please Note:</strong> All Components CSS written in specific scss file. You can find all of them at <code>assets/scss/components/</code>. most of the components are bootstrap components you can find details 
+                <a href="https://getbootstrap.com/docs/4.1/components/alerts/" class="text-primary" target="_blank">Here</a>
+              </p>
+              <p>
+                Let's walk through on third party components and there options 
+              </p>
+              
+              <div id="carousels">
+                <h4 class="mt-5">
+                  Carousels
+                </h4>
+                <p>
+                  Edicati used most popular <a href="https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html" target="_blank" class="text-primary">Owl Carousels 2.</a> as Educati used dynamic scripts loading <code>.owl-carousel</code> class is the hook to init carousel. you can pass rich option by HTML5 <code>data-</code> attribute. options
+                </p>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Option</th>
+                      <th scope="col">Default</th>
+                      <th scope="col">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">data-items</th>
+                      <td> 3 </td>
+                      <td> The number of items you want to see on the screen.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">data-items-tablet</th>
+                      <td> 2 </td>
+                      <td> The number of items you want to see on tablet pc .</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">data-items-mobile-wide</th>
+                      <td> 1 </td>
+                      <td> The number of items you want to see on wide mobile.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">data-autoplay</th>
+                      <td> true </td>
+                      <td> Will slide auto.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">data-autospeed</th>
+                      <td> 3000 </td>
+                      <td> Time to change slide one slide to another.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">data-smartspeed</th>
+                      <td> 800 </td>
+                      <td> Time duration of change slide.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">data-autoheight</th>
+                      <td> true </td>
+                      <td> Slider will adjust the height.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">data-space</th>
+                      <td> 0 </td>
+                      <td> Space between slide.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">data-dots</th>
+                      <td> false </td>
+                      <td> Show dots navigation. </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">data-dots-class</th>
+                      <td> false </td>
+                      <td> Class to add dots navigation. </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">data-arrow</th>
+                      <td> false </td>
+                      <td> Show next/prev navigation. </td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+              
+              <div id="counters">
+                <h4 class="mt-5">
+                  Counters
+                </h4>
+                <p>
+                  Educati used countTo plugin with apear js. you can find details <a href="https://github.com/mhuggins/jquery-countTo" target="_blank" class="text-primary">Here</a>
+                </p>
+                <p>
+                  <code>.ec-counter</code> is the hook for load counter script
+                </p>
+                
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Option</th>
+                      <th scope="col">Default</th>
+                      <th scope="col">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">data-to</th>
+                      <td> 100 </td>
+                      <td> he number to stop counting at. (default: 100)</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+              
+              <div id="gallery">
+                <h4 class="mt-5">
+                  Gallery
+                </h4>
+                <p>
+                  Educati used isotope plugin for filter gallery and masonry and fancybox 3 plugin for lightbox. you can find details <a href="https://isotope.metafizzy.co/" target="_blank" class="text-primary">Here</a>
+                </p>
+                <p>
+                  <code>.isotop-filter</code> is the hook for load scripts for isotop
+                </p>
+                <p>
+                  <code>.masonry-container</code> and <code>.masonry-item</code> is the hook for load scripts
+                </p>
+                </div>
+              
+              <div id="lightbox">
+                <h4 class="mt-5">
+                  Lightbox
+                </h4>
+                <p>
+                  Educati used fancybox 3 plugin for lightbox. you can find details <a href="http://fancyapps.com/fancybox/3/" target="_blank" class="text-primary">Here</a>
+                </p>
+                <p>
+                  Code to init lightbox 
+                </p>
+                <p>
+                 <code>
+                  &#x3C;a data-fancybox=&#x22;images&#x22; href=&#x22;{your image path}&#x22;
+                      &#x3C;img  src=&#x22;{image path}&#x22;&#x3E;
+                  &#x3C;/a&#x3E;
+                </code>
+                </p>
+
+                </div>
+              
+              <div id="map">
+                <h4 class="mt-5">
+                  Map
+                </h4>
+                <p>
+                  Educati used Google map api which give you rich options to make customize map. you can find details <a href="https://developers.google.com/maps/documentation/javascript/tutorial" target="_blank" class="text-primary">Here</a>
+                </p>
+                <p>
+                  <strong class="text-danger">Please Note:</strong> before use google map you need to get your api key. how you can find google map api key. 
+                  <a href="https://developers.google.com/maps/documentation/javascript/get-api-key" class="text-primary" target="_blank">here</a>
+                </p>
+                <p>
+                  <code>.google-map and data-key="you_valid_key"</code> is the hook to load google map api script
+                </p>
+                <p>
+                  Google map options
+                </p>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Option</th>
+                      <th scope="col">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">data-key</th>
+                      <td> Your valid key.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">data-address</th>
+                      <td> Your address.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">data-marker</th>
+                      <td> Map marker icon path.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">data-zoom</th>
+                      <td> Zoom level.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">data-style</th>
+                      <td> JSON file path to style map. some cool style JSON collection <a href="https://snazzymaps.com/" target="_blank" class="text-primary">Here</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+
+                </div>
+                
+            </div> <!-- END components-->
+          
+        </div> <!-- END content-->
+      </div> <!-- END col-md-9 -->
+    </div> <!-- END row-->
+  </div> <!-- END container-fluid-->
+</main>
+  <footer class="site-footer bg-dark py-5">
+    <div class="container text-center">
+      <h4 class="text-white-0_7">Do you still have question?</h4> 
+      <p>
+        Don't worry contact our <a class="text-primary" href="mailto:support@echotheme.com">support</a> team
+      </p>
+    </div>
+  </footer>
+    <script src="../dist/assets/js/vendors.bundle.js"></script>
+    <script src="../dist/assets/js/scripts.js"></script>
+    <script src="doc.js"></script>
+  </body>
+</html>
